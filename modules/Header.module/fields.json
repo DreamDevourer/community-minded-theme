@@ -1,0 +1,125 @@
+[ {
+  "id" : "410d6385-be02-1b9a-c8b0-6eaf94fad023",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Logo Settings",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c193dc9b-c6dc-5242-4bbd-ae335b9b780b",
+    "name" : "white_logo",
+    "display_width" : null,
+    "label" : "White Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Logo%20test.svg",
+      "alt" : "Logo test",
+      "loading" : "lazy",
+      "width" : 52,
+      "height" : 44,
+      "max_width" : 52,
+      "max_height" : 44
+    }
+  }, {
+    "id" : "f3ae9552-a64e-4ac2-540b-2e52499243a5",
+    "name" : "black_logo",
+    "display_width" : null,
+    "label" : "Black Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Logo%20test%20(1).svg",
+      "alt" : "Logo test (1)",
+      "loading" : "lazy",
+      "width" : 52,
+      "height" : 44,
+      "max_width" : 52,
+      "max_height" : 44
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "white_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Logo%20test.svg",
+      "alt" : "Logo test",
+      "loading" : "lazy",
+      "width" : 52,
+      "height" : 44,
+      "max_width" : 52,
+      "max_height" : 44
+    },
+    "black_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Logo%20test%20(1).svg",
+      "alt" : "Logo test (1)",
+      "loading" : "lazy",
+      "width" : 52,
+      "height" : 44,
+      "max_width" : 52,
+      "max_height" : 44
+    }
+  }
+}, {
+  "id" : "eee3a648-3116-0300-ae27-81785a5943a3",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "235438d7-1209-7e11-1901-d313c16df47f",
+    "name" : "custom_text_color",
+    "display_width" : null,
+    "label" : "Custom Text Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "c720113c-7edb-9032-58b7-ea4936d97d4a",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "custom_text_color" : false,
+    "text_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "0d31b63f-c38e-c797-da83-f6c622caf9eb",
+  "name" : "menu_field",
+  "display_width" : null,
+  "label" : "Menu",
+  "required" : false,
+  "locked" : false,
+  "type" : "menu",
+  "default" : ""
+} ]
