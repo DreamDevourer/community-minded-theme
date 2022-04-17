@@ -1,6 +1,8 @@
 # Community Minded 
 A modern theme built with non-profit educational organizations in mind. This theme is designed to be professional and easy to use while still boasting page templates for volunteer sign-ups, donations, event sign-ups, and more.
 
+<img src="./Cover.png" alt="Promotional cover of Community Minded HubSpot Theme.">
+
 ## Feature Highlights of Community Minded:
 
 - Fully responsive and mobile-friendly design
