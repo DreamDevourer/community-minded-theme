@@ -76,6 +76,14 @@
 {###########################################################################}
 {##################   2. Containers / Grid / DnD Areas   ###################}
 {###########################################################################}
+{% set horizontal_padding = theme.buttons.horizontal_padding  %}
+{% set vertical_padding = theme.buttons.vertical_padding  %}
+
+{% set border_color = theme.footer.border_top_color.color %}
+
+
+
+
 
 .content-wrapper {
   max-width: {{ container_width }};
@@ -102,6 +110,7 @@ html {
 body {
   {{ body_font.style }};
   color: {{ body_font.color }};
+  font:{{primary_font}}
 }
 
 /* Paragraphs */
@@ -179,9 +188,9 @@ blockquote {
   border: {{ button_border }};
   border-radius: {{ button_corner_radius }};
   color: {{ button_font_color }};
-  padding: {{ button_spacing }};  text-align:center;   min-width: 130px;  display: inline-block;    padding: 13px 5px;   font-size: 16px; }
+  padding: {{ button_spacing }};  text-align:center;   min-width: 130px;  display: inline-block;    padding: {{vertical_padding}}px {{horizontal_padding}}px;  font-size: 16px; }
 
-.button_design a { color: {{ button_font_color }}; background-color: {{ button_bg_color }}; font-weight: bold; font-size: 14px; line-height: 18px; display: inline-block; padding: 12px 20px;   border: {{ button_border }}; border-radius: {{ button_corner_radius }}; }
+.button_design a { color: {{ button_font_color }}; background-color: {{ button_bg_color }}; font-weight: bold; font-size: 14px; line-height: 18px; display: inline-block;  padding: {{vertical_padding}}px {{horizontal_padding}}px;    border: {{ button_border }}; border-radius: {{ button_corner_radius }}; }
 .button_design a:hover { background-color: #19110B; color: #fff; opacity: 1; }
 
  .row-fluid .get-freecopy input[type=submit]{ 
@@ -204,16 +213,24 @@ blockquote {
 
 body > div.body-wrapper.hs-content-id-49099611227.hs-site-page.page > div:nth-child(1) > div > div > div > div > div, #whitePartialBack { background-color: white; }
 
+
+li.hs-menu-item.hs-menu-depth-3 { display: inline-block; }
+.hs-menu-depth-2.hs-item-has-children  ul.hs-menu-children-wrapper { left: 100%; opacity: 0; visibility: hidden; }
+/* .hs-menu-depth-2.hs-item-has-children:hover ul.hs-menu-children-wrapper { opacity: 1; visibility: visible;     top: 0; }
+ */
+
+
+
 /* SUBMENU Patches */
 .fixed .hs-menu-children-wrapper {
-				display: flex;
+		 display: flex;
     flex-direction: column;
     margin: auto;
     align-items: flex-start;
-				width: calc(100% + 30px);
+		width: calc(100% + 30px);
     box-shadow: 0 0 10px rgb(0 0 0 / 25%);
     background: #fff;
-    margin-top: 30px;
+    margin-top:0px;
 }
 
 .hs-menu-children-wrapper {
@@ -302,7 +319,10 @@ input[type=number]:focus,
 input[type=file]:focus,
 select:focus,
 textarea:focus {
-  border-color: {{ form_input_focus_border_color }};
+border-color: {{ form_input_focus_border_color }};
+  
+
+  
 }
 
 /* Form placeholder text */
@@ -339,6 +359,8 @@ form .hs-button {
   border-radius: {{ button_corner_radius }};
   color: {{ button_font_color }};
   padding: {{ button_spacing }};
+
+  
 }
 
 form input[type=submit]:hover,
@@ -465,7 +487,10 @@ body .submenu.level-2 .triangle-container.level-2.hover .triangle {
 {###########################################################################}
 
 .footer {
-  background-color: {{ footer_bg_color }};
+    background-color: {{ footer_bg_color }};
+      border-top: 2px solid {{ border_color }};
+
+  
 }
 
 /* Footer Content */

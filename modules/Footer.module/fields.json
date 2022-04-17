@@ -1,23 +1,19 @@
 [ {
-  "id" : "2a4594cb-943e-ba08-116d-4cacba516bac",
-  "name" : "logo",
+  "id" : "4a24e26a-6dda-f557-9b89-fea73976b205",
+  "name" : "logo_field",
   "display_width" : null,
   "label" : "Logo",
   "required" : false,
   "locked" : false,
-  "responsive" : true,
-  "resizable" : true,
   "show_loading" : false,
-  "type" : "image",
+  "type" : "logo",
   "default" : {
-    "size_type" : "auto",
-    "src" : "https://www.remotish.agency/hubfs/Community%20Minded/Community%20Minded%20Logo%20Blue%20White.svg",
+    "override_inherited_src" : true,
+    "src" : "https://www.remotish.agency/hubfs/Imported%20images/Community%20Minded%20Logo%20Blue%20White.svg",
     "alt" : "Community Minded Logo Blue White",
-    "loading" : "lazy",
+    "suppress_company_name" : true,
     "width" : 357,
-    "height" : 44,
-    "max_width" : 357,
-    "max_height" : 44
+    "height" : 44
   }
 }, {
   "id" : "6b8519ea-922d-e709-9acc-e52c13f012ce",
@@ -78,67 +74,103 @@
     "type" : "text",
     "default" : "Connect"
   }, {
-    "id" : "8101a50c-a2e7-a7ab-b174-1beac1ab44ef",
-    "name" : "facebook",
+    "id" : "9a958fd6-fc51-f71c-b568-14c522f66d03",
+    "name" : "social_media_group",
     "display_width" : null,
-    "label" : "Facebook",
+    "label" : "Social Media group",
     "required" : false,
     "locked" : false,
-    "validation_regex" : "",
-    "placeholder" : "#",
-    "allow_new_line" : false,
-    "show_emoji_picker" : false,
-    "type" : "text",
-    "default" : "#"
-  }, {
-    "id" : "8c0c5469-af4c-d3f1-6f73-d257a50f5ffd",
-    "name" : "instagram",
-    "display_width" : null,
-    "label" : "Instagram",
-    "required" : false,
-    "locked" : false,
-    "validation_regex" : "",
-    "placeholder" : "#",
-    "allow_new_line" : false,
-    "show_emoji_picker" : false,
-    "type" : "text",
-    "default" : "#"
-  }, {
-    "id" : "65515182-b433-2c17-c600-26ce03b053ce",
-    "name" : "youtube",
-    "display_width" : null,
-    "label" : "Youtube",
-    "required" : false,
-    "locked" : false,
-    "validation_regex" : "",
-    "placeholder" : "#",
-    "allow_new_line" : false,
-    "show_emoji_picker" : false,
-    "type" : "text",
-    "default" : "#"
-  }, {
-    "id" : "915eeb38-3779-fedf-7455-6f9eae0381b0",
-    "name" : "twitter",
-    "display_width" : null,
-    "label" : "Twitter",
-    "required" : false,
-    "locked" : false,
-    "validation_regex" : "",
-    "placeholder" : "#",
-    "allow_new_line" : false,
-    "show_emoji_picker" : false,
-    "type" : "text",
-    "default" : "#"
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "668e56a2-d4cf-c0bb-f5f6-2ea8a721f286",
+      "name" : "icon_field",
+      "display_width" : null,
+      "label" : "Icon",
+      "required" : false,
+      "locked" : false,
+      "icon_set" : "fontawesome-5.14.0",
+      "type" : "icon",
+      "default" : {
+        "name" : "Facebook F",
+        "unicode" : "f39e",
+        "type" : "REGULAR"
+      }
+    }, {
+      "id" : "b073705c-dd23-9d23-fff9-bcd1a7aada20",
+      "name" : "link",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "icon_field" : {
+        "name" : "Facebook F",
+        "unicode" : "f39e",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook F",
+        "unicode" : "f39e",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook F",
+        "unicode" : "f39e",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook F",
+        "unicode" : "f39e",
+        "type" : "REGULAR"
+      }
+    } ]
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "type" : "group",
   "default" : {
     "text_field" : "Connect",
-    "facebook" : "#",
-    "instagram" : "#",
-    "youtube" : "#",
-    "twitter" : "#"
+    "social_media_group" : [ {
+      "icon_field" : {
+        "name" : "Facebook F",
+        "unicode" : "f39e",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook F",
+        "unicode" : "f39e",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook F",
+        "unicode" : "f39e",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook F",
+        "unicode" : "f39e",
+        "type" : "REGULAR"
+      }
+    } ]
   }
 }, {
   "id" : "a6a43a25-ce74-1674-f2e9-6169c46a92c0",
@@ -176,6 +208,35 @@
   "default" : {
     "text_field_1" : "About",
     "richtext_field_1" : "<p>999 S. Road Ave<br>San Diego IL 99999<br><a href=\"tel:999-999-999\">999-999-999</a><br><a href=\"mailto:exuberante@exu.com\">exuberante@exu.com</a></p>"
+  }
+}, {
+  "id" : "c59a5469-f550-2f47-43c1-5c569fb95159",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "30b74939-0b55-f194-380a-78192529b91c",
+    "name" : "icon_color",
+    "display_width" : null,
+    "label" : "Icon Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "icon_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
   }
 }, {
   "id" : "f4e09767-c393-c4da-1825-29c0526fbc00",

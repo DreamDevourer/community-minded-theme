@@ -111,7 +111,7 @@ span.sotext {   position: absolute;   left: 55px;    font-size: 19px;     top: 1
 
 /*  =============== Image Carousel module ================= */
 
-.slick-arblblack .slick-arrow.slick-prev::before,.slick-arblblack .slick-arrow.slick-next::before{     background-image: url(https://f.hubspotusercontent40.net/hubfs/3428648/Arrow%202.svg); }
+.slick-arblblack .slick-arrow.slick-prev::before,.slick-arblblack .slick-arrow.slick-next::before{    /* background-image: url(https://f.hubspotusercontent40.net/hubfs/3428648/Arrow%202.svg); */ }
 /* .slick-arblblack .slick-arrow.slick-next{ right:30px; }
 .slick-arblblack .slick-arrow.slick-prev{ left:0; } */
 
@@ -853,7 +853,7 @@ form {    max-width: 100% !important;  }
   .image-cl-left:before { content: ""; height: 100%; width: 75px; background-color: rgba(57, 57, 57, 0.35); position: absolute; left: 0; }
   .image-cl-left:after { content: ""; height: 100%; width: 75px; background-color: rgba(57, 57, 57, 0.35); position: absolute; right: 0; }
   
-  .image-carousel-large .slick-arblblack .slick-arrow.slick-prev::before,.image-carousel-large .slick-arblblack .slick-arrow.slick-next::before{     background-image: url(https://www.remotish.agency/hubfs/whitearro.svg); }
+  .image-carousel-large .slick-arblblack .slick-arrow.slick-prev::before,.image-carousel-large .slick-arblblack .slick-arrow.slick-next::before{     background-image: url(/Community Minded/images/thumbnails/whitearro.svg); }
   
 
   

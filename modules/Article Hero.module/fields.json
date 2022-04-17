@@ -105,7 +105,7 @@
     "locked" : false,
     "display" : "toggle",
     "type" : "boolean",
-    "default" : false
+    "default" : true
   }, {
     "id" : "3bafcf6f-f8fd-9bba-a6af-3cb368a33e07",
     "name" : "background_color",
@@ -153,7 +153,7 @@
       "color" : "#FFFFFF",
       "opacity" : 100
     },
-    "enable_custom_cta" : false,
+    "enable_custom_cta" : true,
     "background_color" : {
       "color" : "#FFFFFF",
       "opacity" : 100

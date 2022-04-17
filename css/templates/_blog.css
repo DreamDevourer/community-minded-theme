@@ -141,8 +141,7 @@
 
 .blog-index__post-image {
   display: block;
-  background-image: url('https://cdn2.hubspot.net/hubfs/6326501/boilerplate/grayscale-mountain.png');
-  background-position: center center;
+   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 63%;

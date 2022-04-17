@@ -104,7 +104,7 @@
       {# end sendond section #}  
   
   
-			{% dnd_section 
+{#	{% dnd_section 
      padding={
         'top': 100,
         'bottom': 100,
@@ -130,7 +130,10 @@
   
           {% end_dnd_module %}
   
-   {% end_dnd_section %} 
+   {% end_dnd_section %} #}
+  
+  
+    {% include_dnd_partial path="../sections/Quote.html" %}
   
   
   

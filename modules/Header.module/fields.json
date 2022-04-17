@@ -1,77 +1,36 @@
 [ {
-  "id" : "410d6385-be02-1b9a-c8b0-6eaf94fad023",
-  "name" : "field_group",
+  "id" : "d1ad4f63-517b-75c4-5a67-bfa327d95ed2",
+  "name" : "white_logo",
   "display_width" : null,
-  "label" : "Logo Settings",
+  "label" : "White Logo",
   "required" : false,
   "locked" : false,
-  "children" : [ {
-    "id" : "c193dc9b-c6dc-5242-4bbd-ae335b9b780b",
-    "name" : "white_logo",
-    "display_width" : null,
-    "label" : "White Logo",
-    "required" : false,
-    "locked" : false,
-    "responsive" : true,
-    "resizable" : true,
-    "show_loading" : false,
-    "type" : "image",
-    "default" : {
-      "size_type" : "auto",
-      "src" : "https://www.remotish.agency/hubfs/Logo%20test.svg",
-      "alt" : "Logo test",
-      "loading" : "lazy",
-      "width" : 52,
-      "height" : 44,
-      "max_width" : 52,
-      "max_height" : 44
-    }
-  }, {
-    "id" : "f3ae9552-a64e-4ac2-540b-2e52499243a5",
-    "name" : "black_logo",
-    "display_width" : null,
-    "label" : "Black Logo",
-    "required" : false,
-    "locked" : false,
-    "responsive" : true,
-    "resizable" : true,
-    "show_loading" : false,
-    "type" : "image",
-    "default" : {
-      "size_type" : "auto",
-      "src" : "https://www.remotish.agency/hubfs/Logo%20test%20(1).svg",
-      "alt" : "Logo test (1)",
-      "loading" : "lazy",
-      "width" : 52,
-      "height" : 44,
-      "max_width" : 52,
-      "max_height" : 44
-    }
-  } ],
-  "tab" : "CONTENT",
-  "expanded" : false,
-  "type" : "group",
+  "show_loading" : false,
+  "type" : "logo",
   "default" : {
-    "white_logo" : {
-      "size_type" : "auto",
-      "src" : "https://www.remotish.agency/hubfs/Logo%20test.svg",
-      "alt" : "Logo test",
-      "loading" : "lazy",
-      "width" : 52,
-      "height" : 44,
-      "max_width" : 52,
-      "max_height" : 44
-    },
-    "black_logo" : {
-      "size_type" : "auto",
-      "src" : "https://www.remotish.agency/hubfs/Logo%20test%20(1).svg",
-      "alt" : "Logo test (1)",
-      "loading" : "lazy",
-      "width" : 52,
-      "height" : 44,
-      "max_width" : 52,
-      "max_height" : 44
-    }
+    "override_inherited_src" : true,
+    "src" : "https://www.remotish.agency/hubfs/Imported%20images/Logo%20test.svg",
+    "alt" : "Logo test",
+    "suppress_company_name" : true,
+    "width" : 52,
+    "height" : 44
+  }
+}, {
+  "id" : "3158fbd7-65fb-011b-965a-c24e13335d0e",
+  "name" : "color_logo",
+  "display_width" : null,
+  "label" : "Color Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : false,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://www.remotish.agency/hubfs/Imported%20images/Logo%20test%20(1).svg",
+    "alt" : "Logo test (1)",
+    "suppress_company_name" : true,
+    "width" : 52,
+    "height" : 44
   }
 }, {
   "id" : "eee3a648-3116-0300-ae27-81785a5943a3",

@@ -42,6 +42,11 @@
    {# HERO SECTION END #}
       
 
+  
+
+  
+  
+  
       {% dnd_section 
      margin={
         'top': 70,
@@ -59,7 +64,7 @@
             title = "Visit Our Office!",
             text = "<p>Felis placerat gravida sed nibh id purus. Dictum tristique sagittis lobortis sed. Fames fermentum viverra aliquet volutpat. Fames fermentum viverra aliquet volutpat.</p>"
             image_field = {
-                  src : "https://www.remotish.agency/hubfs/Image2022/MAIN%20IMAGE%20(1).png"
+                  src : "{{ get_asset_url('../images/thumbnails/MAIN IMAGE_new.png') }}"
              }
     
           %}
@@ -69,7 +74,9 @@
            
           
   
-         
+           
+
+  
   
    {% end_dnd_section %} 
   
@@ -99,6 +106,17 @@
   
    {% end_dnd_section %} 
 	
+  
+  
+    {% include_dnd_partial
+    path="../sections/multi-column-content.html",
+    context={
+      "background_color": "#FFFFFF"
+    }
+  %}
+  
+  
+  
 		
 		   {# FAQ Section #}
     {% dnd_section

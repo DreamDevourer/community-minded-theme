@@ -66,7 +66,7 @@
             title = "Visit Our Office!",
             text = "<p>Felis placerat gravida sed nibh id purus. Dictum tristique sagittis lobortis sed. Fames fermentum viverra aliquet volutpat. Fames fermentum viverra aliquet volutpat.</p>"
             image_field = {
-                  src : "https://www.remotish.agency/hubfs/Image2022/MAIN%20IMAGE%20(1).png"
+                  src : "{{ get_asset_url('../images/thumbnails/MAIN IMAGE_new.png') }}"
              }
     
           %}
@@ -142,6 +142,11 @@
 
   
    {# end third section #}
+   
+  
+  {% include_dnd_partial path="../sections/call-to-action.html" %}
+  
+  
   
   
   

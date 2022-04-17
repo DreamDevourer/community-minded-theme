@@ -16,36 +16,32 @@
             <div class="exuberant__left">
              <div class="exwhitelogo__row">
 															
-															<a href="/">
+				
                <div class="exwhite__logo">
-                 {% if module.field_group.white_logo.src %}
-                 {% set sizeAttrs = 'width="{{ module.field_group.white_logo.width }}" height="{{ module.field_group.white_logo.height }}"' %}
-                 {% if module.field_group.white_logo.size_type == 'auto' %}
-                 {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
-                 {% elif module.field_group.white_logo.size_type == 'auto_custom_max' %}
-                 {% set sizeAttrs = 'width="{{ module.field_group.white_logo.max_width }}" height="{{ module.field_group.white_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
-                 {% endif %}
-                 {% set loadingAttr = module.field_group.white_logo.loading != 'disabled' ? 'loading="{{ module.field_group.white_logo.loading }}"' : '' %}
-                 <img src="{{ module.field_group.white_logo.src }}" alt="{{ module.field_group.white_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
-                 {% endif %}
+                 {% logo
+	override_inherited_src="{{ module.white_logo.override_inherited_src }}"
+	src="{{ module.white_logo.src }}"
+	alt="{{ module.white_logo.alt }}"
+	width="{{ module.white_logo.width }}"
+	height="{{ module.white_logo.height }}"
+	suppress_company_name="{{ module.white_logo.suppress_company_name }}"
+%}
                </div>
-															</a>
+					
 															
 															
-															<a href="/">
+				
                <div class="exblack__logo" >
-                 {% if module.field_group.black_logo.src %}
-                 {% set sizeAttrs = 'width="{{ module.field_group.black_logo.width }}" height="{{ module.field_group.black_logo.height }}"' %}
-                 {% if module.field_group.black_logo.size_type == 'auto' %}
-                 {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
-                 {% elif module.field_group.black_logo.size_type == 'auto_custom_max' %}
-                 {% set sizeAttrs = 'width="{{ module.field_group.black_logo.max_width }}" height="{{ module.field_group.black_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
-                 {% endif %}
-                 {% set loadingAttr = module.field_group.black_logo.loading != 'disabled' ? 'loading="{{ module.field_group.black_logo.loading }}"' : '' %}
-                 <img src="{{ module.field_group.black_logo.src }}" alt="{{ module.field_group.black_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
-                 {% endif %}
+                 {% logo
+                  override_inherited_src="{{ module.color_logo.override_inherited_src }}"
+                  src="{{ module.color_logo.src }}" 
+                  alt="{{ module.color_logo.alt }}"
+                  width="{{ module.color_logo.width }}"
+                  height="{{ module.color_logo.height }}"
+                  suppress_company_name="{{ module.color_logo.suppress_company_name }}"
+                %}
                </div>
-																	</a>
+									
                
               </div>
 
